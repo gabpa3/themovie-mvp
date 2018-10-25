@@ -6,3 +6,5 @@ Before run project replace the string resource "api_key" with a valid one. This 
 
 # Screenshots
 <img src="screenshots/Screenshot_01.png" height="250" /> <img src="screenshots/Screenshot_02.png" height="250" /> <img src="screenshots/Screenshot_03.png" height="250" />
+
+<h1>© 2018 Gabriel Pérez</h1>
