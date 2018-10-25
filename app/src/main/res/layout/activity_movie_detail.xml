@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="movie"
+            type="com.gabcode.themovie_mvp.data.model.Movie" />
+        <variable
+            name="presenter"
+            type="com.gabcode.themovie_mvp.movieDetail.MovieDetailPresenter" />
+    </data>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:context=".movieDetail.MovieDetailActivity">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="256dp"
+            android:fitsSystemWindows="true"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/collapsing_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                app:contentScrim="@color/colorPrimary"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                <include
+                    android:id="@+id/content_collapsing"
+                    layout="@layout/content_detail_collapsing"
+                    app:movieDetail="@{movie}"/>
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:elevation="4dp"
+                    app:layout_collapseMode="pin"
+                    app:layout_collapseParallaxMultiplier="1.0"
+                    app:popupTheme="@style/ThemeOverlay.AppCompat.ActionBar"/>
+
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            app:behavior_overlapTop="20dp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" >
+
+            <!--here the content-->
+            <include
+                android:id="@+id/content_scrolling"
+                layout="@layout/content_detail_scrolling"
+                app:movieDetail="@{movie}"/>
+
+        </android.support.v4.widget.NestedScrollView>
+
+        <include
+            layout="@layout/progressbar"
+            app:isLoading="@{presenter.loading}" />
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</layout>

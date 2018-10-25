@@ -1,0 +1,31 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:fontFamily">@font/source_sans_pro_regular</item>
+    </style>
+
+    <style name="TextBase" parent="TextAppearance.AppCompat">
+        <item name="android:paddingStart">@dimen/padding_small</item>
+        <item name="android:paddingEnd">@dimen/padding_small</item>
+        <item name="android:paddingTop">@dimen/padding_default</item>
+        <item name="android:paddingBottom">@dimen/padding_default</item>
+    </style>
+
+    <style name="SubtitleTextBase" parent="TextBase">
+        <item name="android:background">@color/primaryAlpha70</item>
+        <item name="android:fontFamily">@font/source_sans_pro_semibold</item>
+        <item name="android:textSize">@dimen/textSize_large</item>
+    </style>
+
+    <style name="ContentTextBase" parent="TextBase">
+        <item name="android:background">@color/primaryAlpha85</item>
+        <item name="android:fontFamily">@font/source_sans_pro_regular</item>
+        <item name="android:textSize">@dimen/textSize_medium</item>
+    </style>
+
+</resources>

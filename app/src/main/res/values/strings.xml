@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Themovie-mvp</string>
+    <string name="title_overview">Overview</string>
+    <string name="message_no_data">No data</string>
+    <string name="title_similar">Similar</string>
+    <string name="label_release">Release</string>
+
+    <string name="api_key">put your api key here</string>
+</resources>

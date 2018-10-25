@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/blueGray_700</color>
+    <color name="colorPrimaryDark">@color/blueGray_800</color>
+    <color name="colorAccent">@color/deepOrange_400</color>
+    <color name="orangeLight">@color/deepOrange_a100</color>
+    <color name="primaryAlpha70">#B3616161</color>
+    <color name="primaryAlpha85">#D9616161</color>
+
+    <!--Material colors-->
+    <color name="blueGray_800">#424242</color>
+    <color name="blueGray_700">#616161</color>
+
+    <color name="deepOrange_400">#FF7043</color>
+    <color name="deepOrange_a100">#FF9E80</color>
+
+</resources>
